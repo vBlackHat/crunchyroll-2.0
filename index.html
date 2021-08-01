@@ -4,37 +4,41 @@
     <head>
         <title>Crunchyroll - Assista a Dev BodyBuilder</title>
         <meta charset = "UTF-8">
-        <link rel = "stylesheet" href = "css/reset.css">
+        <link rel = "stylesheet" href = "Bootstrap/css/bootstrap.min.css">
         <link rel = "stylesheet" href = "css/style.css">
     </head>
     
     <body>
-        <header class = "menu">
-            <nav>
-                <a href = "index.html"><img src = "crunchyroll-logo.png" class = "logo"></a>
-                <a href = "series.html" class = "escritos-menu">Séries</a>
-                <a href = "noticias.html" class = "escritos-menu">Notícias</a>
-                <a href = "games.html" class = "escritos-menu">Games</a>
-            </nav>
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="collapse.navbar-collapse" href="#">
+                <img src="img/crunchyroll-logo.png" alt="crunchyroll-logo" width="136" height="25.5">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Séries</a>
+                  <a class="nav-link" href="#">Notícias</a>
+                  <a class="nav-link" href="#">Games</a>
+                </div>
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      </form>
+                    </div>
+                  </nav>
+              </div>
+            </div>
+          </nav>
         </header>
 
-        <div class = "banner-anime-destaque">
-            <a href = "BokuNoHero.html"><img src = "https://img1.ak.crunchyroll.com/i/spire3/68c809a3d3c27d4c2b9e4f8f223c95c21621629081_main.png" class = "banner"></a>
-        </div>
-
-        <div class = "modal-anime-destaque">
-            <div id = "mensagem-modal" class = "modal">
-
-                <div class = "conteudo-modal">
-                    <span class = "botao-modal">&times;</span>
-                    <a href = "BokuNoHero.html"><p>My Hero Academia voltou com uma batalha entre as salas 1-A e 1-B! Será que esta competição amistosa vai ajudá-los a ir além? Clique e descubra!</p></a>
-                </div>
-    
-            </div>
-        </div>
-
+        <script src = "jquery-3.6.0.min.js"></script>
+        <script src = "Bootstrap/js/bootstrap.min.js"></script>
         <script src = "js/modal.js"></script>
     </body>
 </html>
-
 
